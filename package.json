@@ -25,6 +25,7 @@
     "react-scripts": "3.4.3",
     "react-spinners": "^0.9.0",
     "realm-web": "^1.5.1",
+    "serve": "^13.0.2",
     "validator": "^13.7.0"
   },
   "scripts": {
