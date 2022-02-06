@@ -40,27 +40,59 @@ export default function Sidebar({
         />
       </Card>
       <Card>
-        <SectionHeading>Something Else</SectionHeading>
-        <SectionList>
-          {projects.map((project) => (
-            <SectionListItem
-              key={project.partition}
-              onClick={() => setCurrentProject(project)}
-              isSelected={project.partition === currentProject?.partition}
-            >
-              {project.name}
-            </SectionListItem>
-          ))}
-        </SectionList>
-        <UserDetails
-          user={app.currentUser}
-          handleLogout={() => {
-            app.logOut();
-          }}
-          handleEditPermissions={() => {
-            setIsEditingPermissions(true);
-          }}
-        />
+        <SectionHeading>Drudge Report Scrapes</SectionHeading>
+        <div class="container">
+          <iframe
+            // style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="300"
+            height="300"
+            src="https://charts.mongodb.com/charts-project-0-hptut/embed/charts?id=0dff1349-6a3b-4885-aafa-7395b61408f4&maxDataAge=3600&theme=dark&autoRefresh=true"
+          ></iframe>
+        </div>
+      </Card>
+      <Card>
+        <SectionHeading>Hacker News Scrapes</SectionHeading>
+        <div class="container">
+          <iframe
+            // style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="300"
+            height="300"
+            src="https://charts.mongodb.com/charts-project-0-hptut/embed/charts?id=a549a138-0a8c-485f-803a-3c52d0a79447&maxDataAge=3600&theme=dark&autoRefresh=true"
+          ></iframe>{" "}
+        </div>
+      </Card>
+      <Card>
+        <SectionHeading>Sentiment Score of Scrapes</SectionHeading>
+        <div class="container">
+          <iframe
+            // style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="300"
+            height="300"
+            src="https://charts.mongodb.com/charts-project-0-hptut/embed/charts?id=ce1e79ac-87c1-4346-8843-921e21e5df8c&maxDataAge=3600&theme=dark&autoRefresh=true"
+          ></iframe>{" "}
+        </div>
+      </Card>
+      <Card>
+        <SectionHeading>Articles per Hacker News Writer</SectionHeading>
+        <div class="container">
+          <iframe
+            // style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="300"
+            height="300"
+            src="https://charts.mongodb.com/charts-project-0-hptut/embed/charts?id=34b6f432-ecd5-4de6-b943-a5035dd09a6d&maxDataAge=3600&theme=dark&autoRefresh=true"
+          ></iframe>{" "}
+        </div>
+      </Card>
+      <Card>
+        <SectionHeading>Hacker News Articles</SectionHeading>
+        <div class="container">
+          <iframe
+            // style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="300"
+            height="300"
+            src="https://charts.mongodb.com/charts-project-0-hptut/embed/charts?id=80e6cc7b-4736-479b-bf9c-b9fbaf3d8311&maxDataAge=3600&theme=dark&autoRefresh=true"
+          ></iframe>{" "}
+        </div>
       </Card>
     </SidebarContainer>
   );

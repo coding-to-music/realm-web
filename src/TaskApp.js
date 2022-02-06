@@ -20,12 +20,21 @@ export default function TaskApp() {
         setCurrentProject={setCurrentProject}
         setIsEditingPermissions={setIsEditingPermissions}
       ></Sidebar>
-      <ProjectScreen
-        css={gridAreaMain}
-        currentProject={currentProject}
-        isEditingPermissions={isEditingPermissions}
-        setIsEditingPermissions={setIsEditingPermissions}
-      />
+
+      <Container>
+        <Sidebar
+          css={gridAreaSidebar}
+          currentProject={currentProject}
+          setCurrentProject={setCurrentProject}
+          setIsEditingPermissions={setIsEditingPermissions}
+        ></Sidebar>
+        <ProjectScreen
+          css={gridAreaMain}
+          currentProject={currentProject}
+          isEditingPermissions={isEditingPermissions}
+          setIsEditingPermissions={setIsEditingPermissions}
+        />
+      </Container>
     </Container>
   );
 }
