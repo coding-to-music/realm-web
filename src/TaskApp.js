@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import { useRealmApp } from "./RealmApp";
 import ProjectScreen from "./components/ProjectScreen";
 import Sidebar from "./components/Sidebar";
+import Navigation from "./components/Navigation";
+import { SideNav, SideNavGroup, SideNavItem } from "@leafygreen-ui/side-nav";
 
 export default function TaskApp() {
   const app = useRealmApp();
